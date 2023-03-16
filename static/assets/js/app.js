@@ -276,8 +276,6 @@ jQuery(function ($) {
     "vpsPrice": 60,
     "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=14"
   }, {
-    "vpsCore": 4,
-    "vpsMemory": 8,
     "vpsStorage": 40,
     "vpsBandwidth": 4000,
     "vpsPrice": 80,

@@ -32,11 +32,11 @@ class Invoice(Model):
     ID=AutoField(primary_key=True)
     Service=CharField()
     Amount=IntegerField()
+    User=ForeignKeyField(Users)
     class Meta:
         database=db
 class Transaction(Model):
     ID=PrimaryKeyField()
-    User=ForeignKeyField(Users)
     Invoice=ForeignKeyField(Invoice)
     class Meta:
         database=db

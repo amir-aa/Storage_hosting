@@ -10,6 +10,53 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ .h2{
+
+  font-family: vazir;
+  font-style: normal;
+ }
+ @font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Vazir-Thin.eot");
+  src: url("../fonts/Vazir-Thin.woff") format("woff"),
+    url("../fonts/Vazir-Thin.ttf") format("ttf"),
+    url("../fonts/Vazir-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Vazir-Light.eot");
+  src: url("../fonts/Vazir-Light.woff") format("woff"),
+    url("../fonts/Vazir-Light.ttf") format("ttf"),
+    url("../fonts/Vazir-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Vazir-Light.eot");
+  src: url("../fonts/Vazir-Light.woff") format("woff"),
+    url("../fonts/Vazir-Light.ttf") format("ttf"),
+    url("../fonts/Vazir-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 950;
+  src: url("../fonts/Vazir-Bold.eot");
+  src: url("../fonts/Vazir-Bold.woff") format("woff"),
+    url("../fonts/Vazir-Bold.ttf") format("ttf"),
+    url("../fonts/Vazir-Bold.woff2") format("woff2");
+}
+
+body {
+  font-family: vazir !important;
+  direction: rtl;
+}
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
@@ -42,7 +89,7 @@
   --breakpoint-md:768px;
   --breakpoint-lg:992px;
   --breakpoint-xl:1200px;
-  --font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-sans-serif:vazir,"vazir",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
@@ -68,7 +115,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 /* line 6, src/assets/scss/vendors/rtl/bootstrap.min.css */
 body {
   margin: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: vazir;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -207,7 +254,7 @@ a:not([href]):not([tabindex]):focus {
 
 /* line 6, src/assets/scss/vendors/rtl/bootstrap.min.css */
 code, kbd, pre, samp {
-  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-family: vazir,"Liberation Mono","Courier New",monospace;
   font-size: 1em;
   direction: ltr;
   unicode-bidi: bidi-override;
@@ -7069,7 +7116,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family:vazir;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11302,7 +11349,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 
 /* line 6, src/assets/scss/vendors/rtl/bootstrap.min.css */
 .text-monospace {
-  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-family: vazir;
 }
 
 /* line 6, src/assets/scss/vendors/rtl/bootstrap.min.css */
@@ -11667,63 +11714,6 @@ a.text-dark:focus, a.text-dark:hover {
     border-color: #dee2e6;
   }
 }
-
-@font-face {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url("../../fonts/proxima_nova/proxima-nova-light-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima-nova-light-italic-webfont.woff") format("woff"), url("../../fonts/proxima_nova/proxima-nova-light-italic-webfont.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima-nova-light-italic-webfont.svg#ProximaNovaLight") format("svg");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url("../../fonts/proxima_nova/proxima-nova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima-nova-light-webfont.woff") format("woff"), url("../../fonts/proxima_nova/proxima-nova-light-webfont.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima-nova-light-webfont.svg#ProximaNovaLight") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url("../../fonts/proxima_nova/proxima-nova-regular-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima-nova-regular-italic-webfont.woff") format("woff"), url("../../fonts/proxima_nova/proxima-nova-regular-italic-webfont.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima-nova-regular-italic-webfont.svg#ProximaNovaLight") format("svg");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url("../../fonts/proxima_nova/proxima-nova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima-nova-regular-webfont.woff") format("woff"), url("../../fonts/proxima_nova/proxima-nova-regular-webfont.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima-nova-regular-webfont.svg#ProximaNovaRegular") format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url("../../fonts/proxima_nova/proxima-nova-bold-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima-nova-bold-italic-webfont.woff") format("woff"), url("../../fonts/proxima_nova/proxima-nova-bold-italic-webfont.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima-nova-bold-italic-webfont.svg#ProximaNovaLight") format("svg");
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url("../../fonts/proxima_nova/proxima-nova-semibold-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima-nova-semibold-italic-webfont.woff") format("woff"), url("../../fonts/proxima_nova/proxima-nova-semibold-italic-webfont.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima-nova-semibold-italic-webfont.svg#ProximaNovaLight") format("svg");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url("../../fonts/proxima_nova/proxima-nova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima-nova-semibold-webfont.woff") format("woff"), url("../../fonts/proxima_nova/proxima-nova-semibold-webfont.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima-nova-semibold-webfont.svg#ProximaNovaSemibold") format("svg");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url("../../fonts/proxima_nova/proxima-nova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/proxima_nova/proxima-nova-bold-webfont.woff") format("woff"), url("../../fonts/proxima_nova/proxima-nova-bold-webfont.ttf") format("truetype"), url("../../fonts/proxima_nova/proxima-nova-bold-webfont.svg#ProximaNovaLight") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)

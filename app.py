@@ -26,6 +26,7 @@ def main():
 @login_required
 def logout():
     logout_user()
+    return url_for('main')
 @app.route('/login',methods=['GET','POST'])
 def login():
     if current_user.is_authenticated:
@@ -38,5 +39,8 @@ def login():
         else:
             flash('Unable to Login. Email or Password is incorrect!')
     return render_template('login.html')
-
+@app.route('/profile')
+@login_required
+def profile():
+    
 app.run()
